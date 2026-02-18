@@ -1,0 +1,16 @@
+{
+  "language": "en",
+  "hero.title": "Mahmoud Fathy",
+  "hero.sub": "Blockchain Engineer",
+  "hero.body": "Enterprise Blockchain engineer with deep experience in RWA tokenization and enterprise distributed ledger platforms. Proven experience across public and private blockchains, delivering production-ready solutions spanning smart contracts, backend services, frontend applications, and CI/CD automation. Polyglot, Tool-oriented mindset",
+  "hero.button.contact": "Contact Me",
+  "hero.button.cv": "Download CV",
+
+  "about.title": "About",
+  "about.title.span": "Me",
+  "about.body": "I am a blockchain engineer with more than seven years of experience delivering production-ready distributed systems. My expertise includes smart contract development in multiple languages, RWA tokenization, and full-stack Web3 architecture across public and permissioned blockchains. I work with organizations to bridge traditional finance and decentralized technology through scalable, enterprise-grade solutions.",
+  "about.card.location.title": "LOCATION",
+  "about.card.location.body": "Germany",
+  "about.card.focus_areas.title": "FOCUS AREAS",
+  "about.card.focus_areas.body": "Web3 Security, DeFi, RWA",
+}
