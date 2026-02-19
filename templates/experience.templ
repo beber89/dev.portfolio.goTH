@@ -1,0 +1,188 @@
+package templates
+
+templ ExperienceSection() {
+	<section id="experience" class="w-full px-6 py-20 md:py-28 bg-gray-200/70 dark:bg-gray-900/40">
+		<div class="container mx-auto max-w-5xl">
+			<div class="text-center mb-16">
+				<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 text-emerald-500 mb-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+						<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+						<rect width="20" height="14" x="2" y="6" rx="2"></rect>
+					</svg>
+					<span class="text-sm font-semibold tracking-wide">Career Journey</span>
+				</div>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+					Work <span class="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">Experience</span>
+				</h2>
+				<div class="mt-4 h-1 w-20 mx-auto rounded-full bg-gradient-to-r from-emerald-400 to-teal-500"></div>
+			</div>
+			<div class="relative">
+				<div class="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-400/80 via-emerald-400/30 to-transparent"></div>
+				<div class="space-y-12">
+					<div class="relative pl-12 md:pl-20">
+						<span class="absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30"></span>
+						<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30">
+							<div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4">
+								<div>
+									<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Head of Blockchain Engineering</h3>
+									<p class="text-emerald-500 font-medium">T-RIZE</p>
+								</div>
+								<span class="inline-flex items-center rounded-full border border-gray-200 dark:border-gray-700 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:text-gray-300">2022 - Present</span>
+							</div>
+							<ul class="space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300">
+								<li class="flex gap-3">
+									@BulletIcon()
+									Played a key role in designing and delivering enterprise-grade blockchain solutions focused on RWA tokenization.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Contributed to tokenization and on-chain workflows aligned with regulated financial environments.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Designed and deployed Daml smart contracts for multi-party workflows.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Built full-stack blockchain applications, covering contracts, backend services, and frontend surfaces.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Led DevOps initiatives that automated deployment and monitoring pipelines.
+								</li>
+							</ul>
+							<div class="flex flex-wrap gap-2 text-xs font-mono">
+								@TagPill("Avalanche")
+								@TagPill("Daml")
+								@TagPill("Canton")
+								@TagPill("NextJS")
+								@TagPill("Kubernetes")
+								@TagPill("SQL")
+								@TagPill("PostgreSQL")
+								@TagPill("FastAPI")
+								@TagPill("GCP")
+								@TagPill("Prometheus")
+								@TagPill("Grafana")
+							</div>
+						</div>
+					</div>
+					<div class="relative pl-12 md:pl-20">
+						<span class="absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30"></span>
+						<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30">
+							<div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4">
+								<div>
+									<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Blockchain Developer</h3>
+									<p class="text-emerald-500 font-medium">Timechain</p>
+								</div>
+								<span class="inline-flex items-center rounded-full border border-gray-200 dark:border-gray-700 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:text-gray-300">2021 - 2022</span>
+							</div>
+							<ul class="space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300">
+								<li class="flex gap-3">
+									@BulletIcon()
+									Integrated Fireblocks-powered digital asset custody.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Led DeFi initiatives including a crypto lending platform.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Delivered Solidity smart contracts and audits.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Built NFT data ingestion APIs to power trading intelligence tooling.
+								</li>
+							</ul>
+							<div class="flex flex-wrap gap-2 text-xs font-mono">
+								@TagPill("Solidity")
+								@TagPill("Avalanche")
+								@TagPill("Hardhat")
+								@TagPill("TypeScript")
+							</div>
+						</div>
+					</div>
+					<div class="relative pl-12 md:pl-20">
+						<span class="absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30"></span>
+						<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30">
+							<div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4">
+								<div>
+									<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Blockchain Researcher</h3>
+									<p class="text-emerald-500 font-medium">ÉTS Montréal</p>
+								</div>
+								<span class="inline-flex items-center rounded-full border border-gray-200 dark:border-gray-700 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:text-gray-300">2019 - 2020</span>
+							</div>
+							<ul class="space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300">
+								<li class="flex gap-3">
+									@BulletIcon()
+									Proposed an early-detection mechanism for MVCC conflicts in Hyperledger Fabric.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Implemented multiple strategies inside the Fabric execution pipeline.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Improved overall throughput by 23% and reduced latency by 80%.
+								</li>
+							</ul>
+							<div class="flex flex-wrap gap-2 text-xs font-mono">
+								@TagPill("Hyperledger Fabric")
+								@TagPill("Go")
+								@TagPill("Caliper")
+								@TagPill("AWS")
+							</div>
+						</div>
+					</div>
+					<div class="relative pl-12 md:pl-20">
+						<span class="absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30"></span>
+						<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30">
+							<div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4">
+								<div>
+									<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Blockchain Full-Stack Engineer</h3>
+									<p class="text-emerald-500 font-medium">Bank of Canada</p>
+								</div>
+								<span class="inline-flex items-center rounded-full border border-gray-200 dark:border-gray-700 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:text-gray-300">2019 - 2020</span>
+							</div>
+							<ul class="space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300">
+								<li class="flex gap-3">
+									@BulletIcon()
+									Designed and implemented a CBDC prototype on Hyperledger Fabric.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Benchmarked the system under multiple performance scenarios.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Evaluated scalability, latency, and throughput trade-offs for decision makers.
+								</li>
+								<li class="flex gap-3">
+									@BulletIcon()
+									Produced comprehensive insights that informed the CBDC roadmap.
+								</li>
+							</ul>
+							<div class="flex flex-wrap gap-2 text-xs font-mono">
+								@TagPill("Hyperledger Fabric")
+								@TagPill("Caliper")
+								@TagPill("Azure")
+								@TagPill("Node.js")
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}
+
+templ BulletIcon() {
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-emerald-400 mt-1 flex-shrink-0">
+		<circle cx="12" cy="12" r="10"></circle>
+		<path d="m9 12 2 2 4-4"></path>
+	</svg>
+}
+
+templ TagPill(label string) {
+	<span class="inline-flex items-center rounded-full border border-transparent bg-emerald-400/10 text-emerald-500 px-2.5 py-0.5 font-semibold tracking-wide">{ label }</span>
+}

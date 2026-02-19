@@ -1,0 +1,78 @@
+package templates
+
+templ ProjectsSection() {
+	<section id="projects" class="w-full px-6 py-20 md:py-28 bg-gray-200 dark:bg-gray-950">
+		<div class="container mx-auto max-w-4xl">
+			<div class="text-center mb-14">
+				<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 text-emerald-500 mb-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+						<path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"></path>
+					</svg>
+					<span class="text-sm font-semibold tracking-wide">Portfolio</span>
+				</div>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+					Projects <span class="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">&amp; Highlights</span>
+				</h2>
+				<div class="mt-4 h-1 w-20 mx-auto rounded-full bg-gradient-to-r from-emerald-400 to-teal-500"></div>
+			</div>
+			<div class="grid gap-6 md:grid-cols-2">
+				@ProjectCard(
+					"RWA Platform",
+					"Enterprise-grade real-world asset tokenization platform.",
+					"https://platform.t-rize.io",
+					[]string{"Canton", "Daml", "RWA", "Enterprise"},
+				)
+				@ProjectCard(
+					"Web3-Portal",
+					"T-RIZE Ecosystem Gateway & Multi-Wallet RIZE Management.",
+					"https://rizenet.io",
+					[]string{"Rainbowkit", "Wagmi", "DeFi", "Smart Contracts", "Vite", "Nest API"},
+				)
+				@ProjectCard(
+					"Rizenet Blockchain",
+					"Avalanche-based L1 powering the T-RIZE ecosystem.",
+					"https://testnet-explorer.rizenet.io/",
+					[]string{"Avalanche", "L1s", "Solidity", "Smart Contracts", "Blockscout", "Docker"},
+				)
+				@ProjectCard(
+					"Infrastructure Monitoring System",
+					"Grafana & Prometheus stack covering blockchain and cloud infrastructure.",
+					"",
+					[]string{"Grafana", "Prometheus", "node-exporter", "blackbox-exporter"},
+				)
+			</div>
+		</div>
+	</section>
+}
+
+templ ProjectCard(title string, summary string, link string, tags []string) {
+	<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/60 backdrop-blur shadow-xl shadow-emerald-500/10 flex flex-col group">
+		<div class="flex flex-col gap-1.5 p-6 pb-3">
+			<div class="flex items-start justify-between gap-4">
+				<h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-colors group-hover:text-emerald-400">{ title }</h3>
+				if link != "" {
+					<div class="flex gap-2">
+						<a href={ link } target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-emerald-500 hover:text-white transition-colors">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+								<path d="M15 3h6v6"></path>
+								<path d="M10 14 21 3"></path>
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+							</svg>
+						</a>
+					</div>
+				}
+			</div>
+		</div>
+		<div class="p-6 pt-0 flex flex-col flex-1">
+			<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-1">{ summary }</p>
+			<div class="flex flex-wrap gap-2 mb-4 text-xs font-semibold">
+				for _, tag := range tags {
+					@TagPill(tag)
+				}
+			</div>
+			<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium border border-gray-200 dark:border-gray-700 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white h-10 rounded-lg px-3 w-full transition-colors">
+				View Case Study
+			</button>
+		</div>
+	</div>
+}
