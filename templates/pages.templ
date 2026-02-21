@@ -9,14 +9,14 @@ type HeroData struct {
 
 templ Index(data HeroData) {
 	<!DOCTYPE html>
-	<html lang="en">
+	<html lang="en" class="dark">
 		<head>
 			<meta charset="UTF-8"/>
 			<link rel="stylesheet" href="/static/css/output.css"/>
 			<script src="https://unpkg.com/htmx.org@2.0.4"></script>
 		</head>
-		<body class="bg-gray-200 dark:bg-gray-950 text-gray-900 dark:text-gray-400">
-			<div class="min-h-screen bg-gray-200 dark:bg-gray-950 transition-colors">
+		<body class="bg-primary dark:bg-primary text-gray-900 dark:text-gray-400" data-theme="dark">
+			<div class="min-h-screen bg-primary dark:bg-primary transition-colors">
 				@Navbar()
 				<!-- Hero Section -->
 				@Hero(data)
@@ -37,9 +37,35 @@ templ Index(data HeroData) {
 					<div class="w-2/3 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent"></div>
 				</div>
 			</div>
-		</body>
-	</html>
-	<script>
+			<script>
+    (function () {
+      const STORAGE_KEY = 'theme';
+      const root = document.documentElement;
+      const toggleButton = document.getElementById('theme-toggle');
+      const sunIcon = toggleButton.querySelector('.sun-icon');
+      const moonIcon = toggleButton.querySelector('.moon-icon');
+      function applyTheme(theme) {
+        const isDark = theme === 'dark';
+        root.classList.toggle('dark', isDark);
+        root.dataset.theme = theme;
+        sunIcon.classList.toggle('hidden', !isDark);
+        moonIcon.classList.toggle('hidden', isDark);
+      }
+       function currentTheme() {
+         const stored = localStorage.getItem(STORAGE_KEY);
+         if (stored === 'dark' || stored === 'light') return stored;
+         return 'dark'; // your requirement: default dark regardless of OS
+       }
+
+      applyTheme('dark');   // Default theme
+      toggleButton.addEventListener('click', () => {
+        let newTheme = currentTheme() === 'dark' ? 'light' : 'dark';
+        localStorage.setItem(STORAGE_KEY, newTheme);
+        applyTheme(newTheme);
+      });
+    })();
+  </script>
+			<script>
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll('[data-section]');
     const sections = [...links].map(link => document.getElementById(link.dataset.section));
@@ -56,4 +82,6 @@ templ Index(data HeroData) {
     sections.forEach(section => section && observer.observe(section));
   });
   </script>
+		</body>
+	</html>
 }
