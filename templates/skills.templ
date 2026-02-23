@@ -22,11 +22,11 @@ templ SkillsSection() {
 						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Blockchain</h3>
 					</div>
 					<div class="p-6 pt-0 space-y-4">
-						@SkillRow("Daml", "Advanced", "advanced", "95%")
-						@SkillRow("Canton Network", "Advanced", "advanced", "95%")
-						@SkillRow("Avalanche", "Advanced", "advanced", "95%")
 						@SkillRow("Ethereum", "Advanced", "advanced", "95%")
-						@SkillRow("Hyperledger Fabric", "Advanced", "advanced", "95%")
+						@SkillRow("EVM L2s", "Advanced", "advanced", "95%")
+						@SkillRow("DeFi", "Advanced", "advanced", "95%")
+						@SkillRow("Solana", "Intermediate", "intermediate", "85%")
+						@SkillRow("Zero-Knowledge", "Intermediate", "intermediate", "70%")
 					</div>
 				</div>
 				<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full">
@@ -35,11 +35,28 @@ templ SkillsSection() {
 						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Smart Contracts</h3>
 					</div>
 					<div class="p-6 pt-0 space-y-4">
-						@SkillRow("Daml Smart Contracts", "Advanced", "advanced", "95%")
 						@SkillRow("Solidity", "Advanced", "advanced", "95%")
-						@SkillRow("Chaincode (Go)", "Advanced", "advanced", "95%")
+						@SkillRow("Foundry", "Advanced", "advanced", "95%")
+						@SkillRow("Hardhat", "Advanced", "advanced", "95%")
+						@SkillRow("Truffle", "Advanced", "advanced", "95%")
 						@SkillRow("ERC Standards", "Advanced", "advanced", "95%")
-						@SkillRow("Security Auditing", "Intermediate", "intermediate", "70%")
+						@SkillRow("Proxy Patterns", "Advanced", "advanced", "95%")
+						@SkillRow("Gas Optimization", "Advanced", "advanced", "95%")
+					</div>
+				</div>
+				<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full">
+					<div class="flex items-center gap-2 p-6 pb-4">
+						<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Security &amp; Auditing</h3>
+					</div>
+					<div class="p-6 pt-0 space-y-4">
+						@SkillRow("Adversarial Manual Review", "Advanced", "advanced", "95%")
+						@SkillRow("Fuzz Testing", "Advanced", "advanced", "95%")
+						@SkillRow("Test Coverage", "Advanced", "advanced", "95%")
+						@SkillRow("Economic based Attacks", "Advanced", "advanced", "95%")
+						@SkillRow("Security Reporting", "Advanced", "advanced", "95%")
+						@SkillRow("Exploit Analysis", "Advanced", "advanced", "95%")
+						@SkillRow("Formal Verification", "Intermediate", "intermediate", "85%")
 					</div>
 				</div>
 				<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full">
@@ -49,10 +66,12 @@ templ SkillsSection() {
 					</div>
 					<div class="p-6 pt-0 space-y-4">
 						@SkillRow("Node.js", "Advanced", "advanced", "95%")
+						@SkillRow("Javascript", "Advanced", "advanced", "95%")
 						@SkillRow("Python", "Advanced", "advanced", "95%")
 						@SkillRow("PostgreSQL", "Advanced", "advanced", "95%")
-						@SkillRow("MongoDB", "Advanced", "advanced", "95%")
-						@SkillRow("Go", "Intermediate", "intermediate", "70%")
+						@SkillRow("Go + Templ", "Intermediate", "intermediate", "85%")
+						@SkillRow("Elixir (Phoenix)", "Intermediate", "intermediate", "80%")
+						@SkillRow("NoSql (MongoDB)", "Intermediate", "intermediate", "80%")
 					</div>
 				</div>
 				<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full">
@@ -63,8 +82,9 @@ templ SkillsSection() {
 					<div class="p-6 pt-0 space-y-4">
 						@SkillRow("Next.js", "Advanced", "advanced", "95%")
 						@SkillRow("React", "Advanced", "advanced", "95%")
+						@SkillRow("wagmi | viem | ethers.js", "Advanced", "advanced", "95%")
 						@SkillRow("Flutter", "Advanced", "advanced", "95%")
-						@SkillRow("React Native", "Intermediate", "intermediate", "70%")
+						@SkillRow("Tailwind", "Advanced", "advanced", "95%")
 					</div>
 				</div>
 				<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full">
@@ -73,22 +93,13 @@ templ SkillsSection() {
 						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">DevOps & Cloud</h3>
 					</div>
 					<div class="p-6 pt-0 space-y-4">
+						@SkillRow("Linux", "Advanced", "advanced", "95%")
+						@SkillRow("Git", "Advanced", "advanced", "95%")
 						@SkillRow("Docker", "Advanced", "advanced", "95%")
 						@SkillRow("Kubernetes", "Intermediate", "intermediate", "70%")
 						@SkillRow("GCP", "Intermediate", "intermediate", "70%")
+						@SkillRow("AWS", "Intermediate", "intermediate", "70%")
 						@SkillRow("CI/CD", "Intermediate", "intermediate", "70%")
-					</div>
-				</div>
-				<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full">
-					<div class="flex items-center gap-2 p-6 pb-4">
-						<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Monitoring & Observability</h3>
-					</div>
-					<div class="p-6 pt-0 space-y-4">
-						@SkillRow("Grafana", "Advanced", "advanced", "95%")
-						@SkillRow("Prometheus", "Advanced", "advanced", "95%")
-						@SkillRow("Loki", "Advanced", "advanced", "95%")
-						@SkillRow("OpenTelemetry SDKs", "Intermediate", "intermediate", "70%")
 					</div>
 				</div>
 				<div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full">
@@ -97,10 +108,12 @@ templ SkillsSection() {
 						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Data &amp; AI</h3>
 					</div>
 					<div class="p-6 pt-0 space-y-4">
-						@SkillRow("Machine Learning", "Intermediate", "intermediate", "70%")
-						@SkillRow("Data Analytics", "Intermediate", "intermediate", "70%")
-						@SkillRow("Federated Learning", "Beginner", "beginner", "40%")
-						@SkillRow("Big Data", "Beginner", "beginner", "40%")
+						@SkillRow("Deep Learning", "Advanced", "advanced", "90%")
+						@SkillRow("Tensorflow", "Advanced", "advanced", "90%")
+						@SkillRow("Keras", "Advanced", "advanced", "90%")
+						@SkillRow("Python ML stack", "Advanced", "advanced", "90%")
+						@SkillRow("Model Evaluation & Optimization", "Intermediate", "intermediate", "85%")
+						@SkillRow("Data Analytics", "Intermediate", "intermediate", "80%")
 					</div>
 				</div>
 			</div>

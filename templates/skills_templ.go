@@ -33,23 +33,23 @@ func SkillsSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Daml", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = SkillRow("Canton Network", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = SkillRow("Avalanche", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
 		templ_7745c5c3_Err = SkillRow("Ethereum", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Hyperledger Fabric", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("EVM L2s", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("DeFi", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Solana", "Intermediate", "intermediate", "85%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Zero-Knowledge", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -57,15 +57,19 @@ func SkillsSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Daml Smart Contracts", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
 		templ_7745c5c3_Err = SkillRow("Solidity", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Chaincode (Go)", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Foundry", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Hardhat", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Truffle", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -73,15 +77,55 @@ func SkillsSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Security Auditing", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Proxy Patterns", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</div></div><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full\"><div class=\"flex items-center gap-2 p-6 pb-4\"><span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">Backend</h3></div><div class=\"p-6 pt-0 space-y-4\">")
+		templ_7745c5c3_Err = SkillRow("Gas Optimization", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</div></div><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full\"><div class=\"flex items-center gap-2 p-6 pb-4\"><span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">Security &amp; Auditing</h3></div><div class=\"p-6 pt-0 space-y-4\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Adversarial Manual Review", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Fuzz Testing", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Test Coverage", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Economic based Attacks", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Security Reporting", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Exploit Analysis", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Formal Verification", "Intermediate", "intermediate", "85%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "</div></div><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full\"><div class=\"flex items-center gap-2 p-6 pb-4\"><span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">Backend</h3></div><div class=\"p-6 pt-0 space-y-4\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
 		templ_7745c5c3_Err = SkillRow("Node.js", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Javascript", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -93,15 +137,19 @@ func SkillsSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("MongoDB", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Go + Templ", "Intermediate", "intermediate", "85%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Go", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Elixir (Phoenix)", "Intermediate", "intermediate", "80%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "</div></div><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full\"><div class=\"flex items-center gap-2 p-6 pb-4\"><span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">Frontend</h3></div><div class=\"p-6 pt-0 space-y-4\">")
+		templ_7745c5c3_Err = SkillRow("NoSql (MongoDB)", "Intermediate", "intermediate", "80%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "</div></div><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full\"><div class=\"flex items-center gap-2 p-6 pb-4\"><span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">Frontend</h3></div><div class=\"p-6 pt-0 space-y-4\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -113,15 +161,27 @@ func SkillsSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
+		templ_7745c5c3_Err = SkillRow("wagmi | viem | ethers.js", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
 		templ_7745c5c3_Err = SkillRow("Flutter", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("React Native", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Tailwind", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "</div></div><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full\"><div class=\"flex items-center gap-2 p-6 pb-4\"><span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">DevOps & Cloud</h3></div><div class=\"p-6 pt-0 space-y-4\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "</div></div><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full\"><div class=\"flex items-center gap-2 p-6 pb-4\"><span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">DevOps & Cloud</h3></div><div class=\"p-6 pt-0 space-y-4\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Linux", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Git", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -137,27 +197,11 @@ func SkillsSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
+		templ_7745c5c3_Err = SkillRow("AWS", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
 		templ_7745c5c3_Err = SkillRow("CI/CD", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "</div></div><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 h-full\"><div class=\"flex items-center gap-2 p-6 pb-4\"><span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">Monitoring & Observability</h3></div><div class=\"p-6 pt-0 space-y-4\">")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = SkillRow("Grafana", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = SkillRow("Prometheus", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = SkillRow("Loki", "Advanced", "advanced", "95%").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = SkillRow("OpenTelemetry SDKs", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -165,19 +209,27 @@ func SkillsSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Machine Learning", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Deep Learning", "Advanced", "advanced", "90%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Data Analytics", "Intermediate", "intermediate", "70%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Tensorflow", "Advanced", "advanced", "90%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Federated Learning", "Beginner", "beginner", "40%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Keras", "Advanced", "advanced", "90%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = SkillRow("Big Data", "Beginner", "beginner", "40%").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = SkillRow("Python ML stack", "Advanced", "advanced", "90%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Model Evaluation & Optimization", "Intermediate", "intermediate", "85%").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = SkillRow("Data Analytics", "Intermediate", "intermediate", "80%").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -217,7 +269,7 @@ func SkillRow(name string, level string, variant string, percent string) templ.C
 		var templ_7745c5c3_Var3 string
 		templ_7745c5c3_Var3, templ_7745c5c3_Err = templ.JoinStringErrs(name)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 114, Col: 73}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 127, Col: 73}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var3))
 		if templ_7745c5c3_Err != nil {
@@ -238,7 +290,7 @@ func SkillRow(name string, level string, variant string, percent string) templ.C
 		var templ_7745c5c3_Var4 string
 		templ_7745c5c3_Var4, templ_7745c5c3_Err = templruntime.SanitizeStyleAttributeValues("width: " + percent)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 118, Col: 109}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 131, Col: 109}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var4))
 		if templ_7745c5c3_Err != nil {
@@ -284,7 +336,7 @@ func SkillBadge(level string, variant string) templ.Component {
 			var templ_7745c5c3_Var6 string
 			templ_7745c5c3_Var6, templ_7745c5c3_Err = templ.JoinStringErrs(level)
 			if templ_7745c5c3_Err != nil {
-				return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 128, Col: 133}
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 141, Col: 133}
 			}
 			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var6))
 			if templ_7745c5c3_Err != nil {
@@ -302,7 +354,7 @@ func SkillBadge(level string, variant string) templ.Component {
 			var templ_7745c5c3_Var7 string
 			templ_7745c5c3_Var7, templ_7745c5c3_Err = templ.JoinStringErrs(level)
 			if templ_7745c5c3_Err != nil {
-				return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 130, Col: 124}
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 143, Col: 124}
 			}
 			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var7))
 			if templ_7745c5c3_Err != nil {
@@ -320,7 +372,7 @@ func SkillBadge(level string, variant string) templ.Component {
 			var templ_7745c5c3_Var8 string
 			templ_7745c5c3_Var8, templ_7745c5c3_Err = templ.JoinStringErrs(level)
 			if templ_7745c5c3_Err != nil {
-				return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 132, Col: 160}
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/skills.templ`, Line: 145, Col: 160}
 			}
 			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var8))
 			if templ_7745c5c3_Err != nil {
