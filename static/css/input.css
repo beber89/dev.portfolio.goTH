@@ -1,0 +1,55 @@
+
+@import "tailwindcss";
+@source "../../templates/**/*.templ"
+@config "../../tailwind.config.js";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* @layer theme { */
+/*   :root { */
+/*     --color-primary: var(--border-gray-800  --color-gray-200); */
+/*     --color-secondary: var(--border-gray-700  --color-gray-300); */
+/*   } */
+/*   :root.dark { */
+/*     --color-primary: var(--text-gray-200 --color-gray-950); */
+/*     --color-secondary: var(--text-gray-300 --color-gray-900); */
+/*   } */
+/* } */
+
+.nav-link { @apply rounded-full px-4 py-2 transition-colors text-gray-500; }
+.nav-link-active { @apply bg-emerald-500/15 text-emerald-500; }
+
+@layer theme {
+  /* give Tailwind a named animation token */
+  :root {
+    --animate-trusted-scroll: trusted-scroll 25s linear infinite;
+  }
+}
+
+@layer keyframes {
+  @keyframes trusted-scroll {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+}
+
+
+.bg-primary {
+  @apply bg-gray-100;
+  @variant dark {
+    @apply bg-gray-950
+  }
+}
+.bg-secondary{
+  @apply bg-gray-200;
+  @variant dark {
+    @apply bg-gray-900
+  }
+}
+
+
