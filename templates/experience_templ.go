@@ -29,7 +29,7 @@ func ExperienceSection() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<section id=\"experience\" class=\"w-full px-6 py-20 md:py-28 bg-gray-200/70 dark:bg-gray-900/40\"><div class=\"container mx-auto max-w-5xl\"><div class=\"text-center mb-16\"><div class=\"inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 text-emerald-500 mb-4\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"h-4 w-4\"><path d=\"M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\"></path> <rect width=\"20\" height=\"14\" x=\"2\" y=\"6\" rx=\"2\"></rect></svg> <span class=\"text-sm font-semibold tracking-wide\">Career Journey</span></div><h2 class=\"text-3xl md:text-4xl font-bold text-gray-900 dark:text-white\">Work <span class=\"bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent\">Experience</span></h2><div class=\"mt-4 h-1 w-20 mx-auto rounded-full bg-gradient-to-r from-emerald-400 to-teal-500\"></div></div><div class=\"relative\"><div class=\"absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-400/80 via-emerald-400/30 to-transparent\"></div><div class=\"space-y-12\"><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><h3 class=\"text-xl font-semibold text-gray-900 dark:text-white\">Blockchain Security Researcher</h3><p class=\"text-emerald-500 font-medium\">Zokyo</p></div><span class=\"inline-flex items-center rounded-full border border-gray-200 dark:border-gray-700 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:text-gray-300\">2022 - Present</span></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<section id=\"experience\" class=\"w-full px-6 py-20 md:py-28 bg-gray-200/70 dark:bg-gray-900/40\"><div class=\"container mx-auto max-w-5xl\"><div class=\"text-center mb-16\"><h2 class=\"text-3xl md:text-4xl font-bold text-gray-900 dark:text-white\">Audit <span class=\"bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent\">Process</span></h2><div class=\"mt-4 h-1 w-20 mx-auto rounded-full bg-gradient-to-r from-emerald-400 to-teal-500\"></div></div><div class=\"flex flex-col lg:flex-row items-center lg:items-start w-full\"><div class=\"w-2/3 mb-16 lg:mb-0 lg:px-8  lg:w-1/2\"><div class=\"m-4\"><h3 class=\"text-xl text-emerald-500 font-medium\">Bitguard</h3><h3 class=\"text-l text-emerald-500 font-medium\">How we work together</h3><p class=\"text-md font-semibold text-gray-900 dark:text-white\">BITGUARD delivers robust Web3 security through a streamlined audit approach combining thorough code analysis, close collaboration with your team, and precise remediation guided by actionable findings.</p></div></div><div class=\"w-full lg:w-1/2 relative\"><div class=\"absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-400/80 via-emerald-400/30 to-transparent\"></div><div class=\"space-y-12\"><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><p class=\"text-md font-semibold text-gray-900 dark:text-white\">Step 1.</p><h3 class=\"text-xl text-emerald-500 font-medium\">Scope Definition & Code Freeze</h3></div></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -37,7 +37,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "Conducted in-depth security audits for early-stage and high-profile Web3 protocols, delivering structured findings reports.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "Define audit scope, including contracts, modules, and integrations</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -45,7 +45,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "Performed manual code review, invariant analysis, unit testing, and fuzz testing to uncover logic flaws, edge-case failures, and exploitable attack surfaces in EVM-based Smart Contracts.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "Share repository access and lock a final commit hash for consistency</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -53,7 +53,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "Contributed adversarial analysis and expanded test coverage for complex protocols including World Liberty Finance (WLFI) and LayerZero, identifying critical vulnerabilities prior to deployment.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "Align on timelines, deliverables, and communication channels</li></ul></div></div><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><p class=\"text-md font-semibold text-gray-900 dark:text-white\">Step 2.</p><h3 class=\"text-xl text-emerald-500 font-medium\">Audit Kickoff</h3></div></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -61,7 +61,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "Collaborated directly with client teams to communicate risk clearly, validate fixes, and ensure secure remediation before deployment.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "Conduct a kickoff call to understand architecture and threat model</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -69,47 +69,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "Authored technical blog posts highlighting interesting audit findings, tools and security best practices to educate teams and the broader Web3 community.</li></ul><div class=\"flex flex-wrap gap-2 text-xs font-mono\">")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Solidity").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Security").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Foundry").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Hardhat").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Typescript").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Echidna").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("DeFi").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("NFTs").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("ERCs").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 7, "</div></div></div><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><h3 class=\"text-xl font-semibold text-gray-900 dark:text-white\">Independent Software Developer</h3><p class=\"text-emerald-500 font-medium\">Independent</p></div><span class=\"inline-flex items-center rounded-full border border-gray-200 dark:border-gray-700 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:text-gray-300\">2020 - 2021</span></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "Review documentation, specifications, and intended behaviors</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -117,7 +77,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 8, "Led and delivered end-to-end software systems across blockchain, backend, and frontend stacks, operating as lead and often sole engineer across multiple independent projects.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 7, "Establish real-time collaboration with your engineering team</li></ul></div></div><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><p class=\"text-md font-semibold text-gray-900 dark:text-white\">Step 3.</p><h3 class=\"text-xl text-emerald-500 font-medium\">Deep Security Review</h3></div></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -125,7 +85,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "Designed and implemented a blockchain-based NFT presale for a game, owning the full smart contract lifecycle including architecture, testing, Web3 frontend , backend workers, distributed storage and database design.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 8, "Perform manual code review alongside automated analysis tools</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -133,7 +93,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 10, "Contributed to a proof-of-concept distributed ledger architecture for a US-based client, focusing on message-passing patterns which serves as the low layer fabric for their blockchain.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "Identify vulnerabilities such as logic flaws, access control issues, and edge cases</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -141,43 +101,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 11, "Built and delivered a cross-platform mobile attendance management application as an independent project alongside full-time employment as a lecturer.</li></ul><div class=\"flex flex-wrap gap-2 text-xs font-mono\">")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Solidity").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("React").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Elixir").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Node.js").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("JS/TS").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("PostgreSQL").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("Flutter").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("IPC").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 12, "</div></div></div><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><h3 class=\"text-xl font-semibold text-gray-900 dark:text-white\">Academic Staff Educator</h3><p class=\"text-emerald-500 font-medium\">National Telecommunication Institute</p></div><span class=\"inline-flex items-center rounded-full border border-gray-200 dark:border-gray-700 px-3 py-0.5 text-xs font-semibold text-gray-600 dark:text-gray-300\">2012 - 2021</span></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 10, "Analyze protocol design, state transitions, and attack surfaces</li></ul></div></div><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><p class=\"text-md font-semibold text-gray-900 dark:text-white\">Step 4.</p><h3 class=\"text-xl text-emerald-500 font-medium\">Scope Definition & Code Freeze</h3></div></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -185,7 +109,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 13, "Delivered hands-on technical training as part of government-sponsored education and upskilling initiatives, teaching recent graduates, fellow academic staff personnels, and technical college students.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 11, "Share issues in real-time via a private dashboard or communication channel</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -193,7 +117,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 14, "Designed and taught curricula spanning computer networks, cloud infrastructure, programming, and applied systems engineering, balancing students' theoretical foundations with practical implementation.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 12, "Provide detailed explanations, risk severity, and recommended fixes</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -201,7 +125,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 15, "Supervised diploma and graduation projects, guiding students through system architecture, implementation, testing, and technical evaluation.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 13, "Collaborate with your developers to clarify and validate findings</li></ul></div></div><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><p class=\"text-md font-semibold text-gray-900 dark:text-white\">Step 5.</p><h3 class=\"text-xl text-emerald-500 font-medium\">Remediation &amp; Rereview</h3></div></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -209,7 +133,7 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 16, "Participated in certified academy programs aligned with enterprise technologies, including VMware, Cisco, and Huawei, ensuring training reflected real-world industry standards.</li><li class=\"flex gap-3\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 14, "Your team implements fixes based on the audit findings</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -217,47 +141,39 @@ func ExperienceSection() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 17, "Supervised diploma and graduation projects, guiding students through system architecture, implementation, testing, and technical evaluation.</li></ul><div class=\"flex flex-wrap gap-2 text-xs font-mono\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 15, "We verify patches and ensure vulnerabilities are properly resolved</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = TagPill("Networks").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = BulletIcon().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = TagPill("Cloud").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 16, "Re-test critical paths and edge cases after remediation</li></ul></div></div><div class=\"relative pl-12 md:pl-20\"><span class=\"absolute left-3 md:left-5 top-2 flex h-2 w-2 items-center justify-center rounded-full bg-emerald-400 text-white ring-8 ring-gray-100/80 dark:ring-gray-950/70 shadow-lg shadow-emerald-500/30\"></span><div class=\"rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/50 backdrop-blur shadow-xl shadow-emerald-500/10 p-6 hover:-translate-y-1 hover:shadow-emerald-500/30\"><div class=\"flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-4\"><div><p class=\"text-md font-semibold text-gray-900 dark:text-white\">Step 6.</p><h3 class=\"text-xl text-emerald-500 font-medium\">Final Report</h3></div></div><ul class=\"space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-300\"><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = TagPill("Python").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = BulletIcon().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = TagPill("Tensorflow").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 17, "Deliver a comprehensive report with all findings and their statuses</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = TagPill("Virtualization Technology").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = BulletIcon().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = TagPill("Internet of Things").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 18, "Classify issues as resolved, acknowledged, or informational</li><li class=\"flex gap-3\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = TagPill("Deep Learning").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = BulletIcon().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = TagPill("Keras").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = TagPill("scikit-learn").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 18, "</div></div></div></div></div></div></section>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 19, "Provide security recommendations and long-term best practices</li></ul></div></div></div></div></div></div></section>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -286,7 +202,7 @@ func BulletIcon() templ.Component {
 			templ_7745c5c3_Var2 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 19, "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"h-4 w-4 text-emerald-400 mt-1 flex-shrink-0\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle> <path d=\"m9 12 2 2 4-4\"></path></svg>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 20, "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"h-4 w-4 text-emerald-400 mt-1 flex-shrink-0\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle> <path d=\"m9 12 2 2 4-4\"></path></svg>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -315,20 +231,20 @@ func TagPill(label string) templ.Component {
 			templ_7745c5c3_Var3 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 20, "<span class=\"inline-flex items-center rounded-full border border-transparent bg-emerald-400/10 text-emerald-500 px-2.5 py-0.5 font-semibold tracking-wide\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 21, "<span class=\"inline-flex items-center rounded-full border border-transparent bg-emerald-400/10 text-emerald-500 px-2.5 py-0.5 font-semibold tracking-wide\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
 		var templ_7745c5c3_Var4 string
 		templ_7745c5c3_Var4, templ_7745c5c3_Err = templ.JoinStringErrs(label)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/experience.templ`, Line: 166, Col: 163}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `templates/experience.templ`, Line: 188, Col: 163}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var4))
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 21, "</span>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 22, "</span>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
