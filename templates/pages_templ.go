@@ -56,7 +56,7 @@ func Index(data HeroData) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = AboutSection().Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = OurServices().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -64,7 +64,7 @@ func Index(data HeroData) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = ExperienceSection().Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = AuditProcess().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -76,15 +76,7 @@ func Index(data HeroData) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "<!-- Skills Section -->")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = SkillsSection().Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 7, "<!-- Contact Section -->")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "<!-- Contact Section -->")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -92,7 +84,7 @@ func Index(data HeroData) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 8, "<!-- Footer -->")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 7, "<!-- Footer -->")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -100,7 +92,7 @@ func Index(data HeroData) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "<!-- Divider --><div class=\"w-full flex justify-center bg-gray-200 dark:bg-gray-950\"><div class=\"w-2/3 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent\"></div></div></div><script>\n    (function () {\n      const STORAGE_KEY = 'theme';\n      const root = document.documentElement;\n      const toggleButton = document.getElementById('theme-toggle');\n      const sunIcon = toggleButton.querySelector('.sun-icon');\n      const moonIcon = toggleButton.querySelector('.moon-icon');\n      function applyTheme(theme) {\n        const isDark = theme === 'dark';\n        root.classList.toggle('dark', isDark);\n        root.dataset.theme = theme;\n        sunIcon.classList.toggle('hidden', !isDark);\n        moonIcon.classList.toggle('hidden', isDark);\n      }\n       function currentTheme() {\n         const stored = localStorage.getItem(STORAGE_KEY);\n         if (stored === 'dark' || stored === 'light') return stored;\n         return 'dark'; // your requirement: default dark regardless of OS\n       }\n\n      applyTheme('dark');   // Default theme\n      toggleButton.addEventListener('click', () => {\n        let newTheme = currentTheme() === 'dark' ? 'light' : 'dark';\n        localStorage.setItem(STORAGE_KEY, newTheme);\n        applyTheme(newTheme);\n      });\n    })();\n  </script><script>\n  document.addEventListener(\"DOMContentLoaded\", () => {\n    const links = document.querySelectorAll('[data-section]');\n    const sections = [...links].map(link => document.getElementById(link.dataset.section));\n    const observer = new IntersectionObserver(entries => {\n      entries.forEach(entry => {\n        const link = document.querySelector(`[data-section=\"${entry.target.id}\"]`);\n        if (!link) return;\n        if (entry.isIntersecting) {\n          links.forEach(l => l.classList.remove('nav-link-active'));\n          link.classList.add('nav-link-active');\n        }\n      });\n    }, { rootMargin: \"-30% 0px -60% 0px\" });\n    sections.forEach(section => section && observer.observe(section));\n  });\n  </script><script>\n      (function () {\n        const track = document.querySelector('[data-trusted-track]');\n        if (!track) return;\n        // duplicate children for seamless wrap\n        track.innerHTML += track.innerHTML;\n        let position = 0;\n        const speed = 80; // pixels per second\n        let lastTime = null;\n        function step(timestamp) {\n          if (!lastTime) lastTime = timestamp;\n          const delta = (timestamp - lastTime) / 1000; // seconds since last frame\n          lastTime = timestamp;\n          position += speed * delta; // move right\n          if (position >= track.scrollWidth / 2) {\n            position = 0; // reset when half (one set) has scrolled\n          }\n          track.style.transform = `translateX(${position * -1}px)`; // negative to move left-to-right view\n          requestAnimationFrame(step);\n        }\n        requestAnimationFrame(step);\n      })();\n      </script></body></html>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 8, "<!-- Divider --><div class=\"w-full flex justify-center bg-gray-200 dark:bg-gray-950\"><div class=\"w-2/3 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent\"></div></div></div><script>\n    (function () {\n      const STORAGE_KEY = 'theme';\n      const root = document.documentElement;\n      const toggleButton = document.getElementById('theme-toggle');\n      const sunIcon = toggleButton.querySelector('.sun-icon');\n      const moonIcon = toggleButton.querySelector('.moon-icon');\n      function applyTheme(theme) {\n        const isDark = theme === 'dark';\n        root.classList.toggle('dark', isDark);\n        root.dataset.theme = theme;\n        sunIcon.classList.toggle('hidden', !isDark);\n        moonIcon.classList.toggle('hidden', isDark);\n      }\n       function currentTheme() {\n         const stored = localStorage.getItem(STORAGE_KEY);\n         if (stored === 'dark' || stored === 'light') return stored;\n         return 'dark'; // your requirement: default dark regardless of OS\n       }\n\n      applyTheme('dark');   // Default theme\n      toggleButton.addEventListener('click', () => {\n        let newTheme = currentTheme() === 'dark' ? 'light' : 'dark';\n        localStorage.setItem(STORAGE_KEY, newTheme);\n        applyTheme(newTheme);\n      });\n    })();\n  </script><script>\n  document.addEventListener(\"DOMContentLoaded\", () => {\n    const links = document.querySelectorAll('[data-section]');\n    const sections = [...links].map(link => document.getElementById(link.dataset.section));\n    const observer = new IntersectionObserver(entries => {\n      entries.forEach(entry => {\n        const link = document.querySelector(`[data-section=\"${entry.target.id}\"]`);\n        if (!link) return;\n        if (entry.isIntersecting) {\n          links.forEach(l => l.classList.remove('nav-link-active'));\n          link.classList.add('nav-link-active');\n        }\n      });\n    }, { rootMargin: \"-30% 0px -60% 0px\" });\n    sections.forEach(section => section && observer.observe(section));\n  });\n  </script><script>\n      (function () {\n        const track = document.querySelector('[data-trusted-track]');\n        if (!track) return;\n        // duplicate children for seamless wrap\n        track.innerHTML += track.innerHTML;\n        let position = 0;\n        const speed = 80; // pixels per second\n        let lastTime = null;\n        function step(timestamp) {\n          if (!lastTime) lastTime = timestamp;\n          const delta = (timestamp - lastTime) / 1000; // seconds since last frame\n          lastTime = timestamp;\n          position += speed * delta; // move right\n          if (position >= track.scrollWidth / 2) {\n            position = 0; // reset when half (one set) has scrolled\n          }\n          track.style.transform = `translateX(${position * -1}px)`; // negative to move left-to-right view\n          requestAnimationFrame(step);\n        }\n        requestAnimationFrame(step);\n      })();\n      </script></body></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

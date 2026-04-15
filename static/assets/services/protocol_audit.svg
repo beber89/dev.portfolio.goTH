@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="topFace" x1="120" y1="110" x2="350" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D1FAE5"/>
+      <stop offset="1" stop-color="#A7F3D0"/>
+    </linearGradient>
+    <linearGradient id="leftFace" x1="90" y1="150" x2="250" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7B7"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="rightFace" x1="250" y1="130" x2="440" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="shadow" x="40" y="60" width="432" height="392" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" stroke="#047857" stroke-width="8" stroke-linejoin="round">
+    <path d="M110 250L250 180L390 250L250 320L110 250Z" fill="url(#topFace)"/>
+    <path d="M110 250L250 320V400L110 330V250Z" fill="url(#leftFace)"/>
+    <path d="M390 250L250 320V400L390 330V250Z" fill="url(#rightFace)"/>
+    <path d="M150 190L250 140L350 190L250 240L150 190Z" fill="url(#topFace)"/>
+    <path d="M150 190L250 240V300L150 250V190Z" fill="url(#leftFace)"/>
+    <path d="M350 190L250 240V300L350 250V190Z" fill="url(#rightFace)"/>
+    <path d="M190 135L250 105L310 135L250 165L190 135Z" fill="url(#topFace)"/>
+    <path d="M190 135L250 165V205L190 175V135Z" fill="url(#leftFace)"/>
+    <path d="M310 135L250 165V205L310 175V135Z" fill="url(#rightFace)"/>
+  </g>
+</svg>
